@@ -1,0 +1,44 @@
+@charset "UFT-8";
+/* CTRL ; */
+/* seletor {
+    propriedades: valor;
+} */
+/* fonte google */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+body{
+    font-family: 'Fira Code', monospace;
+    background: url('img/ubuntu.jpg') no-repeat
+}
+table{
+    width: 100%; 
+    height: 100%;
+    border: 2px solid #141414;
+    border-spacing: 0;
+    text-align: center;
+}
+td{
+    text-align: center;
+    border: 1px solid #0e0e0e;
+    padding: 5px solid black; 
+  
+}
+#menu{
+    color:#f5e504;
+    font-size: 1.2em;
+    font-weight: 700;  
+}
+a{
+    color:aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color:#141414;
+    text-decoration: underline;
+}
+.linha{
+    background-color: rgb(243, 232, 107);
+    
+}
+h1{
+    font-size: 2em;
+}
