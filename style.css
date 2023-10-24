@@ -1,44 +1,81 @@
-@charset "UFT-8";
-/* CTRL ; */
-/* seletor {
-    propriedades: valor;
-} */
-/* fonte google */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 body{
-    font-family: 'Fira Code', monospace;
-    background: url('img/ubuntu.jpg') no-repeat
+    background: #ccc;
 }
-table{
-    width: 100%; 
-    height: 100%;
-    border: 2px solid #141414;
-    border-spacing: 0;
-    text-align: center;
+#interface{
+    background: #fff;
+    width: 1200px;
+    margin: 0 auto;
 }
-td{
-    text-align: center;
-    border: 1px solid #0e0e0e;
-    padding: 5px solid black; 
-  
+
+#topo{
+    height: 70px;
 }
+
+#topo img{
+    margin: 10px 20px;
+}
+
 #menu{
-    color:#f5e504;
+    display: block;
+    position: absolute;
+    width: 800px;
+    top: 20px;
+    left: 900px;
+}
+
+#menu ul{
+    list-style: none;
     font-size: 1.2em;
-    font-weight: 700;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
-a{
-    color:aliceblue;
+
+#menu li{
+    float: left;
+}
+
+#menu li a{
+    color: #4c4b4b;
     text-decoration: none;
+    margin: 0px;
+    padding: 5px 25px;
 }
-a:hover{
-    color:#141414;
-    text-decoration: underline;
+
+#menu li a:hover{
+    color:#109eea;
+    text-decoration:underline;
 }
-.linha{
-    background-color: rgb(243, 232, 107);
-    
+#banner-anime{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    margin: 0px;
 }
-h1{
-    font-size: 2em;
+
+#aniem1, #anime2{
+    max-width: 100%;
+    height: auto;
+}
+
+#banner-anime img{
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+#anime1, #anime2:hover{
+    opacity: 1;
+}
+
+#anime1:hover, #anime2{
+    opacity: 0;
 }
